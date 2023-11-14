@@ -32,6 +32,29 @@ Con el fin de explicar el funcionamiento de la aplicación se describe el uso de
 - El uso del Widget [GoogleFonts](https://pub.dev/packages/google_fonts) nos permitirá el uso de diversas fuentes, con el fin de hacer la aplicación más amigable a la vista. 
 
 ## Diseño
+Nos enfocamos en ofrecer una experiencia única y positiva a través de un diseño cautivador y contenidos que impulsen la motivación. Para lograr esto, consideraremos los siguientes aspectos:
+
+- Se utilizan colores calidos y alegres como lo son las variantes de Orange por propiedades vigorizante.
+- Se seleccionarán tipografías de fácil entendimiento y tamaños de acuerdo con el color de cada imagen.
+- Se imitan estucturas de texto y botones para posteriores acciones por parte del usuario.
+
+
+### Diseño Inspirado
+Para la construcion de los aspectos visuales de la aplicación, se tomo en cuenta  un mockup de la siguente web, [Dribbble] (https://dribbble.com/shots/popular).
+En la cual se obtuvo el siguiente diseño:
+![Diseño Inspirado] (/assets/diseño_inspirado.jpeg)
+
+
+### Pantalla Principal de la Aplicación
+a través del mockup visto anteriormente, se realizo el diseño de la *Pantalla Principal* al de ingresar a la aplicación:
+![Pantalla Principal de la App] (/assets/pantalla_principal.jpeg)
+
+
+### Pantalla de Frases
+Después, se tiene el flujo a la siguiente pantalla, en la cual podemos ver la *Pantalla de Frases*, con **frase motivacional** y **autor** , más acciones que ofrece la aplicación.
+![Pantalla Frases de la App] (/assets/pantalla_frases.jpeg)
+
+
 
 ## Implementación
 
