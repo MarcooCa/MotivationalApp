@@ -1,8 +1,10 @@
-# mi_app
+# MotivationalApp
 
 A new Flutter project.
 
-## Getting Started
+## Equipo
+
+### Marco Cancino
 
 This project is a starting point for a Flutter application.
 
