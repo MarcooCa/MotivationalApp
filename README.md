@@ -53,7 +53,7 @@ a través del mockup visto anteriormente, se realizo el diseño de la *Pantalla 
 
 
 ### Pantalla de Frases
-Después, se tiene el flujo a la siguiente pantalla, en la cual podemos ver la *Pantalla de Frases*, con **frase motivacional** y **autor** , más acciones que ofrece la aplicación.
+Luego, tenemos el flujo a la siguiente pantalla donde podemos ver la *Pantalla de Frases*, en la cual tenemos una **Frase motivacional**, **Imagen** y **Autor** , más funciones que ofrece la aplicación.
 
 ![Pantalla Frases de la App](/assets/pantalla_frases2.jpg)
 
