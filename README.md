@@ -49,7 +49,7 @@ En la cual se obtuvo el siguiente diseño:
 ### Pantalla Principal de la Aplicación
 a través del mockup visto anteriormente, se realizo el diseño de la *Pantalla Principal* al ingresar en la aplicación:
 
-![Pantalla Principal de la App](/assets/pantalla_principal.jpeg)
+![Pantalla Principal de la App](/assets/pantalla_principal2.jpeg)
 
 
 ### Pantalla de Frases
