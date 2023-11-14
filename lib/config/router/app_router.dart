@@ -14,7 +14,7 @@ final appRouter = GoRouter(
 
     GoRoute(
       path: '/frasesmo',
-      builder: (context, state) => MotivationalScreen(),
+      builder: (context, state) => const MotivationalScreen(),
     )
   ]
 );

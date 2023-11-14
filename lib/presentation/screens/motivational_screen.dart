@@ -74,7 +74,7 @@ class _MotivationalScreenState extends State<MotivationalScreen> {
                   gradient: LinearGradient(
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
-                    stops: [0, 0.6, 1],
+                    stops: const [0, 0.5, 1],
                     colors: [
                      Colors.orange.withAlpha(50),
                      Colors.orange.withAlpha(150),
@@ -89,17 +89,35 @@ class _MotivationalScreenState extends State<MotivationalScreen> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+                    Text(
+                      '"',
+                      style: GoogleFonts.oswald( fontSize: 60 , fontWeight: FontWeight.w900, color: Colors.amberAccent),
+                    ),
                     RichText(
                       textAlign: TextAlign.center,
                       text: TextSpan(
-                        text: "${quote.quote}\n",
-                        style: GoogleFonts.oswald(fontSize: 30, fontWeight: FontWeight.w700),
+                        style: GoogleFonts.oswald( fontWeight: FontWeight.w700),
                         children: [
-                          
+
+                          TextSpan(                        
+                            text: '${quote.quote}\n',
+                            style: const TextStyle(fontSize: 30)
+                          ),
+
+                          const TextSpan(                        
+                             text: '\n',
+                             style: TextStyle(fontSize: 20)
+                          ),
+
                           TextSpan(
                             text: "Autor: ${quote.author}",
                             style: const TextStyle(fontSize: 16),
-                          )
+                          ),
+
+                          const TextSpan(                        
+                             text: '\n',
+                             style: TextStyle(fontSize: 20)
+                          ),
                         ]
                       ),
                     )
@@ -117,7 +135,7 @@ class _MotivationalScreenState extends State<MotivationalScreen> {
             FloatingActionButton(
               onPressed: () {
                 setState(() {
-                     _currentIndex = (_currentIndex - 1).clamp(0, motivationalQuotes.length - 1);
+                     _currentIndex = (_currentIndex - 1 + motivationalQuotes.length) % motivationalQuotes.length;
                     });
               },
               elevation: 0,
@@ -135,7 +153,7 @@ class _MotivationalScreenState extends State<MotivationalScreen> {
             FloatingActionButton(
               onPressed: () {
                 setState(() {
-                     _currentIndex = (_currentIndex + 1).clamp(0, motivationalQuotes.length - 1);
+                     _currentIndex = (_currentIndex + 1) % motivationalQuotes.length;
                     });
               },
               elevation: 0,
