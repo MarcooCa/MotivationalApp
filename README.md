@@ -46,7 +46,7 @@ En la cual se obtuvo el siguiente diseño:
 ![Diseño Inspirado](/assets/diseño_inspirado.jpeg)
 
 
-### Pantalla Principal de la Aplicación
+### Pantalla Principal
 a través del mockup visto anteriormente, se realizo el diseño de la *Pantalla Principal* al ingresar en la aplicación:
 
 ![Pantalla Principal de la App](/assets/pantalla_principal2.jpg)
