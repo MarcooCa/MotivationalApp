@@ -42,17 +42,17 @@ Nos enfocamos en ofrecer una experiencia única y positiva a través de un dise�
 ### Diseño Inspirado
 Para la construcion de los aspectos visuales de la aplicación, se tomo en cuenta  un mockup de la siguente web, [Dribbble] (https://dribbble.com/shots/popular).
 En la cual se obtuvo el siguiente diseño:
-![Diseño Inspirado] (/assets/diseño_inspirado.jpeg)
+![Diseño Inspirado](/assets/diseño_inspirado.jpeg)
 
 
 ### Pantalla Principal de la Aplicación
-a través del mockup visto anteriormente, se realizo el diseño de la *Pantalla Principal* al de ingresar a la aplicación:
-![Pantalla Principal de la App] (/assets/pantalla_principal.jpeg)
+a través del mockup visto anteriormente, se realizo el diseño de la *Pantalla Principal* al ingresar en la aplicación:
+![Pantalla Principal de la App](/assets/pantalla_principal.jpeg)
 
 
 ### Pantalla de Frases
 Después, se tiene el flujo a la siguiente pantalla, en la cual podemos ver la *Pantalla de Frases*, con **frase motivacional** y **autor** , más acciones que ofrece la aplicación.
-![Pantalla Frases de la App] (/assets/pantalla_frases.jpeg)
+![Pantalla Frases de la App](/assets/pantalla_frases.jpeg)
 
 
 
