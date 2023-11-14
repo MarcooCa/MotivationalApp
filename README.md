@@ -50,9 +50,9 @@ La arquitectura por capas en Flutter sigue un enfoque organizado y modular. Se d
 
 ### Capa de Datos:
 
-- **Carpeta**: Puede no tener una carpeta específica, pero puedes organizar tus archivos relacionados con la manipulación de datos aquí.
+- **Carpeta**: models
 
-> Manejo de datos para los modelos definidos en la capa de modelos.Ejemplo: Puede contener un archivo que gestiona la obtención y manipulación de datos relacionados con las frases motivacionales.
+> Manejo de datos para los modelos definidos en la capa de modelos. Contiene un archivo que gestiona la obtención y manipulación de datos relacionados con las frases motivacionales.
 
 ### Capa de Presentación:
 
