@@ -40,7 +40,7 @@ Nos enfocamos en ofrecer una experiencia única y positiva a través de un dise�
 
 
 ### Diseño Inspirado
-Para la construcion de los aspectos visuales de la aplicación, se tomo en cuenta  un mockup de la siguente web, [Dribbble](https://dribbble.com/shots/popular).
+Para la construción de los aspectos visuales de la aplicación, se tomo en cuenta  un mockup de la siguente web, [Dribbble](https://dribbble.com/shots/popular).
 En la cual se obtuvo el siguiente diseño:
 
 ![Diseño Inspirado](/assets/diseño_inspirado.jpeg)
