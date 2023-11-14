@@ -49,13 +49,13 @@ En la cual se obtuvo el siguiente diseño:
 ### Pantalla Principal de la Aplicación
 a través del mockup visto anteriormente, se realizo el diseño de la *Pantalla Principal* al ingresar en la aplicación:
 
-![Pantalla Principal de la App](/assets/pantalla_principal2.jpg)
+![Pantalla Principal de la App](/assets/pantalla_principal.jpeg)
 
 
 ### Pantalla de Frases
 Después, se tiene el flujo a la siguiente pantalla, en la cual podemos ver la *Pantalla de Frases*, con **frase motivacional** y **autor** , más acciones que ofrece la aplicación.
 
-![Pantalla Frases de la App](/assets/pantalla_frases.jpeg)
+![Pantalla Frases de la App](/assets/pantalla_frases2.jpg)
 
 
 
