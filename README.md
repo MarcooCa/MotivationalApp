@@ -34,7 +34,7 @@ Con el fin de explicar el funcionamiento de la aplicación se describe el uso de
 ## Diseño
 Nos enfocamos en ofrecer una experiencia única y positiva a través de un diseño cautivador y contenidos que impulsen la motivación. Para lograr esto, consideraremos los siguientes aspectos:
 
-- Se utilizan colores calidos y alegres como lo son las variantes de Orange por propiedades vigorizante.
+- Se utilizan colores cálidos y alegres como lo son las variantes de Orange por propiedades vigorizantes.
 - Se seleccionarán tipografías de fácil entendimiento y tamaños de acuerdo con el color de cada imagen.
 - Se imitan estucturas de texto y botones para posteriores acciones por parte del usuario.
 
