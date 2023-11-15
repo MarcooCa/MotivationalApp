@@ -61,14 +61,14 @@ Luego, tenemos el flujo a la siguiente pantalla donde podemos ver la *Pantalla d
 
 ## Implementación
 
-Teniendo en cuenta que estamos ocupando `Visual Studio Code` pues instalaremos una extensión que nos permitirá implementar la característica de una forma más cómoda y rápida. 
+Teniendo en cuenta que estamos ocupando `Visual Studio Code`, instalaremos una extensión que nos permitirá implementar la característica de una forma más cómoda y rápida. 
 La extensión es Pubspec Assist, con ella fácilmente podemos añadir dependencias en `Dart` y `Flutter`.
 
 ![Pubspec](https://github.com/MarcooCa/MotivationalApp/assets/77038426/5458c56e-d1d8-4d54-92b5-dc234585ca48)
 
 Para implementar la característica añadiremos las siguientes dependencias: `screenshot` e `image_gallery_saver`.  Presionando `Ctrl+Shift+P` en `VisualStudio Code` y escribiendo Pubspect Assit: `Add/update dependencies`, podemos agregar las anteriores dependencias de manera fácil y rápida. 
 
-Pasando a la implementación en sí, el proyecto está estructurado en diferentes carpetas que serían las diferentes capas de la arquitectura. Para que la generación de imágenes con widgets en la aplicación funciones, primeramente, se definió dentro de la carpeta models, un modelo de datos que define la Frase Motivacional, es decir está la `quote`, el `autor` y la `imagePath`, por lo que en este momento la información necesaria para construir la parte visual de la imagen está de manera local y se hace referencia al dentro de la carpeta models también en un archivo diferente que hace import del modelo principal. 
+Pasando a la implementación en sí, el proyecto está estructurado en diferentes carpetas que serían las diferentes capas de la arquitectura. Para que la generación de imágenes con widgets en la aplicación funcione, primeramente, se definió dentro de la carpeta models, un modelo de datos que define la Frase Motivacional, es decir está presente la `quote`, el `author` y la `imagePath`, por lo que en este momento la información necesaria para construir la parte visual de la imagen está de manera local y se hace referencia a la data dentro de la misma carpeta en un archivo diferente que hace import del modelo principal. 
 
 ```
 class MotivationalQuote { 
@@ -99,9 +99,9 @@ final appRouter = GoRouter(
 ); 
 ```
 
-Es decir, tenemos una localización inicial que haría referencia a la pantalla HomeScreen `(archivo home.dart)` y otra ruta que nos llevaría a la pantalla en la que se encuentra la implementación de la característica principal y la que nos vamos a centrar `(archivo motivational_screen.dart)`.
+Es decir, tenemos una localización inicial que haría referencia a la pantalla HomeScreen `(archivo home.dart)` y otra ruta que nos llevaría a la pantalla en la que se encuentra la implementación de la característica principal y en la que nos vamos a centrar `(archivo motivational_screen.dart)`.
 
-Dentro de otra carpeta llamada `Presentation` se encuentran las diferentes pantallas de la app y también algunos widgets personalizados. La implementación de la característica de generación de imágenes con widgets se encuentra en la pantalla `MotivationalScreen`. Primeramente, tenemos la clase `MotivationalScreen` y constructor constante. Posteriormente se crea la clase `_MotivationalScreenState`, dentro de esta clase se implementa las diferentes `“mutaciones”` o cambios de la pantalla. 
+Dentro de otra carpeta llamada `Presentation` se encuentran las diferentes pantallas de la app y también algunos widgets personalizados. La implementación de la característica de generación de imágenes con widgets se encuentra en la pantalla `MotivationalScreen`. Primeramente, tenemos la clase `MotivationalScreen` y su constructor constante. Posteriormente se crea la clase `_MotivationalScreenState`, dentro de esta clase se implementan las diferentes `“mutaciones”` o cambios de la pantalla. 
 
 ```
 class _MotivationalScreenState extends State<MotivationalScreen> { 
@@ -138,7 +138,7 @@ Luego se empieza a construir la interfaz de la pantalla.
 
 El `MotivationalQuote quote`, permite obtener la cita (frase, autor, imagen) utilizando el índice `_currentIndex`.
 
-La estructura de la pantalla se realizó dentro de un `Scaffold`, donde se creó un `AppBar` para tener una barra en la parte de arriba. 
+La estructura de la pantalla se realizó dentro de un `Scaffold`, donde se creó un `AppBar` para tener una barra en la parte superior de la screen. 
 Se define el cuerpo de la pantalla “encerrando” los widgets que serán capturados a través de Screenshot. Dentro del Screenshot se utiliza el Stack para superponer los widgets en diferentes capas ya que tendremos el fondo que será la imagen y la frase junto a su autor en el frente 
 Todo el Stack se centra y dentro de sus hijos a través del widget Image podemos hacer llamado a la imagen de fondo `(quote.ImagePath)` según el index correspondiente. 
 
@@ -192,7 +192,7 @@ FloatingActionButton(
             ),
 ```
 
-El primero de la fila permite retroceder, cuando se presiona, actualiza el estado de la clase, se calcula el nuevo índice en `_cuttentIndex` restándole 1 al actual para pasar a un índice anterior y si se encuentra en 0 vuelve al último índice de la lista. Así según el índice se muestra la frase motivacional correspondiente. 
+El primero de la fila permite retroceder, cuando se presiona, actualiza el estado de la clase, se calcula el nuevo índice en `_cuttentIndex` restándole 1 al actual para pasar a un índice anterior y si se encuentra en 0 vuelve al último índice de la lista. Así, según el índice, se muestra la frase motivacional correspondiente. 
 
 ```
 FloatingActionButton( 
@@ -204,7 +204,7 @@ FloatingActionButton(
               ), 
 ```
 
-Luego tenemos el segundo `FloatingActionButton` de la fila que al presionarlo manda a llamar a la función `saveImageGallery` que se había creado y de esa forma se captura la imagen del stack y se guarda en galería. 
+Luego tenemos el segundo `FloatingActionButton` de la fila que al presionarlo manda a llamar a la función `saveImageGallery` que se había creado anteriormente y de esa forma se captura la imagen del stack y se guarda en galería. 
 
 ```
 FloatingActionButton( 
@@ -218,7 +218,7 @@ FloatingActionButton(
             ), 
 ```
 
-Y el último de la fila realiza algo parecido al primero solamente que calcula el nuevo índice sumándole 1 para pasar al siguiente. Ahora si está en el último índice este avanzará al primero de la lista.
+Y el último de la fila realiza algo parecido al primero solamente que calcula el nuevo índice sumándole 1 para pasar al siguiente. Ahora, si está en el último índice y se presiona, este avanzará al primer índice de la lista.
 
 
 ## Arquitectura
