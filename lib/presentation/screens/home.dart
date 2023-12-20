@@ -22,16 +22,19 @@ class HomeScreen extends StatelessWidget {
             height: 350,
             fit: BoxFit.cover),
           ),
-          RichText(
-            
-            text: TextSpan(
-              style: const TextStyle(color: Colors.black),
-              children:[
-                TextSpan(text: 'Inspiración Diaria\n', style: GoogleFonts.oswald(fontSize: 20) ),
-                TextSpan(text: 'Frases\n', style: GoogleFonts.dmSerifDisplay(fontSize: 50, fontWeight: FontWeight.bold) ),
-                TextSpan(text: 'Motivacionales\n', style: GoogleFonts.dmSerifDisplay(fontSize: 50, fontWeight: FontWeight.bold) ),
-                TextSpan(text: 'Descubre frases motivacionales, guardalas en tu dispositivo y compartelas con el mundo', style: GoogleFonts.oswald(fontSize: 20, color: Colors.grey))
-              ] ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: RichText(
+              
+              text: TextSpan(
+                style: const TextStyle(color: Colors.black),
+                children:[
+                  TextSpan(text: 'Inspiración Diaria\n', style: GoogleFonts.oswald(fontSize: 20) ),
+                  TextSpan(text: 'Frases\n', style: GoogleFonts.dmSerifDisplay(fontSize: 50, fontWeight: FontWeight.bold) ),
+                  TextSpan(text: 'Motivacionales\n', style: GoogleFonts.dmSerifDisplay(fontSize: 50, fontWeight: FontWeight.bold) ),
+                  TextSpan(text: 'Descubre frases motivacionales, guardalas en tu dispositivo y compartelas con el mundo', style: GoogleFonts.oswald(fontSize: 20, color: Colors.grey))
+                ] ),
+            ),
           ),
 
           Center(
